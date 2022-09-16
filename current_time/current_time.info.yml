@@ -1,0 +1,5 @@
+name: 'Current Time'
+type: module
+description: 'This module show current datetime and site location according to selected timezone.'
+core_version_requirement: ^8 || ^9
+configure: current_time.admin_index

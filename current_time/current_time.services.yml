@@ -1,0 +1,4 @@
+services:
+  current_time.custom_service:
+    class: Drupal\current_time\Services\CustomService
+    arguments: ['@config.factory']

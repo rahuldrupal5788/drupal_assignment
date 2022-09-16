@@ -1,0 +1,8 @@
+# Current time menu items definition
+current_time.config_form:
+  title: 'Set county, city and timezone'
+  route_name: current_time.config_form
+  description: 'Manage country, city and timezone information'
+  parent: system.admin_config_regional
+  menu_name: admin
+  weight: 100

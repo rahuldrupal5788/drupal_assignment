@@ -1,0 +1,36 @@
+<?php
+
+/**
+ * @file
+ * Contains theme function.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function current_time_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.current_time':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module show current datetime and site location according to selected timezone.') . '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme()
+ */
+function current_time_theme($existing, $type, $theme, $path) {
+  return [
+    'currentdatetime' => [
+      'variables' => [
+        'country' => NULL,
+        'city' => NULL,
+        'datetime' => NULL,
+      ],
+    ],
+  ];
+}

@@ -1,0 +1,7 @@
+current_time.config_form:
+  path: '/admin/config/regional/current-time'
+  defaults:
+    _form: '\Drupal\current_time\Form\CurrentTimeConfigForm'
+    _title: 'Set county, city and timezone'
+  requirements:
+    _permission: 'administer site configuration'
